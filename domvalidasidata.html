@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom validasi data</title>
+</head>
+<body>
+
+    <h2>JavaScripts Validation</h2>
+    <p>Masukan nilai dari 1 sampai 10</p>
+
+    <input id="num"">
+    <button type="button" onclick="myfunction()"">Submit
+        <p id="demo"></p>
+
+        <script>
+            function myfunction() {
+                let x = document.getElementById("num").value;
+                let text;
+
+                if (isNaN(x) || x < 1 || x > 10) {
+                    text = "Input tidak valid, masukan angka dari 1 sampai 10";
+                } else {
+                    text = "Input valid";
+                }
+                document.getElementById("demo").innerHTML = text;
+            }
+        </script>
+    
+</body>
+</html>

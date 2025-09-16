@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar DOM</title>
+</head>
+<body>
+
+    <h2>Java Scripts HTML DOM</h2>
+
+    <div id="main">
+        <p>HTML by Tag name</p>
+        <p>contoh <b>get element byTagName</b>Method.</p>
+    </div>
+
+    <div id="demo">
+
+    </div>
+    <script>
+        var x = document.getElementById("main");
+        var y = x.getElementsByTagName("p");
+        document.getElementById("demo").innerHTML = 'Paragraf dari tag p inidex 0) dalam div "main" adalah: ' + y[0].innerHTML;
+    </script>
+    
+</body>
+</html>
